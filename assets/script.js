@@ -3,7 +3,7 @@ var generateBtn = document.querySelector("#generate");
 
 
 function generatePassword() {
-  const passwordLength = window.prompt("How many characters do you want the password to contain?");
+  const passwordLength = parseInt(window.prompt("How many characters do you want the password to contain?"));
   const acceptSpecialCharacters = confirm("Click OK to confirm including special characters");
   const acceptNum = confirm("Click OK to confirm including numeric characters");
   const acceptLower = confirm("Click OK to confirm including lowercase");
@@ -13,6 +13,11 @@ function generatePassword() {
   var specialCharacters = ["!", "#", "$", "%", "&", "(", ")", "*", "+", "-", "/", "<", "=", ">", "?", "@", "["];
   var lowercase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
   var uppercase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+
+  if (passwordLength > 128){
+    return alert("Password length cannot be more than 128 characters")
+
+  }
 
   if (acceptSpecialCharacters) {
     master = master.concat(specialCharacters)
@@ -29,7 +34,7 @@ function generatePassword() {
 
   var passwordArray = []
 
-  for (var i = 0; i <= parseInt(passwordLength); i++) {
+  for (var i = 0; i <= (passwordLength); i++) {
     var result = Math.floor(Math.random() * master.length)
     var temp = master[result]
     passwordArray.push(temp)
