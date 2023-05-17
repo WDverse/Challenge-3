@@ -9,25 +9,35 @@ function generatePassword() {
   const acceptLower = confirm("Click OK to confirm including lowercase");
   const acceptUpper = confirm("Click OK to confirm including uppercase");
   var master = [];
-  var numCharacters =  ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+  var numCharacters = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
   var specialCharacters = ["!", "#", "$", "%", "&", "(", ")", "*", "+", "-", "/", "<", "=", ">", "?", "@", "["];
   var lowercase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
   var uppercase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 
-  if(acceptSpecialCharacters){
+  if (acceptSpecialCharacters) {
     master = master.concat(specialCharacters)
   }
-  if(acceptNum){
+  if (acceptNum) {
     master = master.concat(numCharacters)
   }
-  if(acceptLower){
+  if (acceptLower) {
     master = master.concat(lowercase)
   }
-  if(acceptUpper){
+  if (acceptUpper) {
     master = master.concat(uppercase)
   }
 
-};
+
+
+
+  master = Math.floor(Math.random() * master.length)
+
+  var result = ""
+
+  for (i = 0; i <= )
+
+
+
 
 
 
