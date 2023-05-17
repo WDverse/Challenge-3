@@ -25,21 +25,17 @@ function generatePassword() {
   }
   if (acceptUpper) {
     master = master.concat(uppercase)
-  } 
-  
+  }
 
-
-  
   var passwordArray = []
-  
-  for (var i = 0; i <= parseInt(passwordLength); i++ ){
+
+  for (var i = 0; i <= parseInt(passwordLength); i++) {
     var result = Math.floor(Math.random() * master.length)
     var temp = master[result]
     passwordArray.push(temp)
   }
-  console.log(master)
+
   passwordArray.toString()
-  console.log(passwordArray)
   return passwordArray.join('')
 
 }
