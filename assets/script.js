@@ -20,28 +20,28 @@ function generatePassword() {
   }
 
   if (acceptSpecialCharacters) {
-    master = master.concat(specialCharacters)
+    master = master.concat(specialCharacters);
   }
   if (acceptNum) {
-    master = master.concat(numCharacters)
+    master = master.concat(numCharacters);
   }
   if (acceptLower) {
-    master = master.concat(lowercase)
+    master = master.concat(lowercase);
   }
   if (acceptUpper) {
-    master = master.concat(uppercase)
+    master = master.concat(uppercase);
   }
 
   var passwordArray = []
 
   for (var i = 0; i <= (passwordLength); i++) {
-    var result = Math.floor(Math.random() * master.length)
-    var temp = master[result]
-    passwordArray.push(temp)
+    var randomIndex = Math.floor(Math.random() * master.length);
+    var randomCharacter = master[randomIndex];
+    passwordArray.push(randomCharacter);
   }
 
-  passwordArray.toString()
-  return passwordArray.join('')
+  passwordArray.toString();
+  return passwordArray.join('');
 
 }
 
