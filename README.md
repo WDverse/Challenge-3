@@ -19,7 +19,7 @@ N/A
 To use this webpage, click on the "Generate Password" button. Then, input your prefered password length in the prompt (cannot be less than 8 characters or more than 128 characters) and click "ok" to select a character choice or "cancel" to move to the next choice without selecting. View your password in the placeholder after all choices have been made.
 
 The following image shows the web application's appearance and functionality:
-![The Password Generator webpage includes a header, a card containing a heading and a placeholder, and a red button containing a "Generate Password" text in white found below the placeholder.](./assets/images/screenshot.png)
+![The Password Generator webpage includes a header, a card containing a heading and a placeholder, and a red button containing a "Generate Password" text in white found below the placeholder.](./assets/screenshot.png)
 
 ## Credits
 

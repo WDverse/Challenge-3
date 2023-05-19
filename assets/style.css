@@ -1,5 +1,5 @@
 
-
+/* Applies the property value to all elements, and the content before and after all the elements*/
 *,
 *::before,
 *::after {
@@ -44,7 +44,6 @@ header {
 
 /* Applies the property values to elements with class="card" */
 
-
 .card {
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
@@ -57,7 +56,7 @@ header {
   padding: 30px 40px;
 }
 
-
+/* Applies the property values to the content after an element with class="card-header" */
 
 .card-header::after {
   content: " ";
@@ -67,17 +66,19 @@ header {
   height: 2px;
 }
 
-/* Applies the property values to elements with class="card-body" */
+/* Applies the property value to elements with class="card-body" */
 
 .card-body {
   min-height: 100px;
 }
 
-/* Applies the property values to elements with class="card-footer" */
+/* Applies the property value to elements with class="card-footer" */
 
 .card-footer {
   text-align: center;
 }
+
+/* Applies the property values to the content before an element with class="card-footer" */
 
 .card-footer::before {
   content: " ";
@@ -86,6 +87,8 @@ header {
   background: #e7e9eb;
   height: 2px;
 }
+
+/* Applies the property values to the content after an element with class="card-footer" */
 
 .card-footer::after {
   content: " ";
@@ -118,7 +121,7 @@ button[disabled] {
   background: #c0c7cf;
 }
 
-/* Applies the property values to elements with class="float-right" */
+/* Applies the property value to elements with class="float-right" */
 
 .float-right {
   float: right;
