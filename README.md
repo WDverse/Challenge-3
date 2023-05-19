@@ -37,4 +37,4 @@ N/A
 
 
 Here is the link to the webpage:
-[Passord Generator](https://wdverse.github.io/Password-generator/)
+[Password Generator](https://wdverse.github.io/Password-generator/)
