@@ -40,7 +40,7 @@ function generatePassword() {  // Declares a function called generatePassword
 
   //Uses a for loop to randomly select an element in master array based on password length, continuously push the random character into passwordArray
 
-  for (var i = 0; i <= passwordLength; i++) {
+  for (var i = 0; i < passwordLength; i++) {
     var randomIndex = Math.floor(Math.random() * master.length);
     var randomCharacter = master[randomIndex];
     passwordArray.push(randomCharacter);
